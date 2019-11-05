@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>The thing!</h2>
+    <ul>
+        <li>Id: <%= data._id %></li>
+        <li>Name: <%= data.name %></li>
+        <li>Age: <%= data.age %></li>
+        <li>Is it Yudong tho?: <%= data.isYudong %></li>
+        <li>Hobbies: <% for(var thing of data.hobbies) {%><%=thing%> <% }%></li>
+    </ul>
+</body>
+
+</html>
